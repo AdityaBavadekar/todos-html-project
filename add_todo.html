@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todos</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/globals.css" />
+        <link rel="stylesheet" href="css/add_todo.css" />
+
+    </head>
+    <body>
+        <main>
+            <h1>
+                <a href="/">
+                    <i class="ri-arrow-left-line toolbar-icon"></i>
+                </a>
+                <code>/Add TODO</code>
+            </h1>
+
+            <div class="todo-content">
+                <textarea class="todo-title todo-textarea autoResize" name="todo-title" id="" rows="1" placeholder="Title"></textarea>
+                <textarea class="todo-description todo-textarea autoResize" name="todo-description" id="" rows="1" placeholder="Enter description" autofocus></textarea>
+            </div>
+        </main>
+
+        <script src="js/auto_resize_textarea.js"></script>
+
+    </body>
+</html>

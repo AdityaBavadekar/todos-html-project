@@ -1,0 +1,58 @@
+main {
+    padding: 1.5rem 2.5rem;
+}
+
+.todo-textarea {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.todo-textarea:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.todo-content {
+    min-height: 480px;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: opacity 0.25s, border-color 0.25s;
+}
+
+.todo-title {
+    font-size: var(--text-size-h3);
+    line-height: var(--line-height-h3);
+    font-weight: bold;
+}
+
+.todo-timestamp-stats {
+    padding: 18px;
+}
+
+.todo-timestamp-stats p {
+    display: inline-flex;
+    font-family: monospace;
+}
+
+.todo-description {
+    font-size: var(--text-size-h6);
+    line-height: var(--line-height-h6);
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.footer-content {
+    padding: 6.5rem 2.5rem;
+}
+
+.footer-content a {
+    font-weight: bold;
+    opacity: 0.8;
+    color: var(--color-link);
+}
+
+.footer-content a:hover {
+    opacity: 1;
+}

@@ -1,0 +1,203 @@
+html {
+    --todo-color-light: white;
+    --todo-color-light-hover: rgb(250, 213, 213);
+    --todo-color-dark:rgb(51, 49, 49);
+    --todo-color-dark-hover:rgba(68, 33, 33, 0.609);
+}
+
+:root {
+
+    /* COLOR */
+    --light-color: #ffffff;
+    --text-color: white;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #191b21;
+    --secondary-background-color: rgb(61, 61, 61);
+    --secondary-variant-background-color: rgb(49, 49, 49);
+    --transparent-light-color: rgba(255, 255, 255, 0.1);
+    --transparent-dark-color: rgba(65, 65, 65, 0.95);
+    --gradient-variant-color: linear-gradient(var(--secondary-background-color), rgb(75, 75, 75));
+    --gradient-color: linear-gradient(black, var(--secondary-background-color));
+    --hover-light-color: #0000;
+
+
+    --input-box-color: rgba(128, 128, 128, 0.5);
+    --theme-color: black;
+    --color-link: rgb(98, 98, 255);
+    --line-height: 28px;
+
+    /* TYPOGRAPHY */
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+
+    /* Sizes */
+    --radius-default: 8px;
+    --line-height: 24px;
+    --header-height: 64px;
+    --menu-button-gap: 4px;
+
+
+    /* Display */
+    --text-size-body-large: 18px;
+    --text-size-body-medium: 16px;
+    --text-size-body-small: 14px;
+
+    /* Title */
+    --text-size-body-large: 18px;
+    --text-size-body-medium: 16px;
+    --text-size-body-small: 14px;
+
+    /* Heading */
+    --text-size-h1: 52px;
+    --text-size-h2: 42px;
+    --text-size-h3: 34px;
+    --text-size-h4: 28px;
+    --text-size-h5: 24px;
+    --text-size-h6: 18px;
+
+    /* Heading - Line Height */
+    --line-height-h1: 54px;
+    --line-height-h2: 44px;
+    --line-height-h3: 38px;
+    --line-height-h4: 32px;
+    --line-height-h5: 28px;
+    --line-height-h6: 22px;
+
+    --text-size-body-large: 18px;
+    --text-size-body-medium: 16px;
+    --text-size-body-small: 14px;
+
+    /* OTHERS */
+    --padding-16: 16px;
+    --gap: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* scrollbar-color: var(--color) transparent; */
+}
+  
+
+html {
+    font-size: var(--font-size-body-large);
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body-large);
+    background-color: var(--primary-background-color);
+    color: var(--text-color);
+
+    line-height: var(--line-height);
+    transition: background-color .25s, color .25s;
+
+}
+
+.material-symbols-outlined {
+    color: var(--text-color);
+}
+
+body.light-theme{
+    --theme-color: white;
+    --light-color: #3d3d3d;
+    --light-color-alt: rgba(0,0,0,.6);
+    --primary-background-color: #fff;
+    --text-color: rgb(0, 0, 0); 
+    --secondary-background-color: #cfcfcf;
+    --secondary-variant-background-color: #c5c3c3;
+    --hover-light-color: #fff;
+    --transparent-dark-color: rgba(255,255,255,.2);
+    --transparent-light-color: rgba(0,0,0,.06);
+    --gradient-color: linear-gradient(var(--secondary-background-color), rgb(235, 225, 225));
+    --gradient-variant-color: linear-gradient(white, var(--secondary-background-color));
+    --input-box-color: rgba(158, 155, 155, 0.485);
+}
+
+input, button, textarea {
+    font: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    resize: vertical;
+}
+
+ul {
+    list-style: none;
+}
+
+a, button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+textarea {
+    border-radius: var(--radius-default);
+    border: 1px solid transparent;
+    width: 100%;
+    resize: none;
+    padding: 4px;
+    background-color: var(--secondary-variant-background-color);
+}
+
+textarea:focus {
+    border-color: var(--light-color);
+}
+
+h1 {
+    font-size: var(--text-size-h1);
+    margin: 40px 0;
+    line-height: var(--line-height-h1);
+}
+
+h2 {
+    font-size: var(--text-size-h2);
+    margin: 32px 0;
+    line-height: var(--line-height-h2);
+}
+
+h3 {
+    font-size: var(--text-size-h3);
+    margin: 28px 0;
+    line-height: var(--line-height-h3);
+}
+
+h4 {
+    font-size: var(--text-size-h4);
+    margin: 24px 0;
+    line-height: var(--line-height-h4);
+}
+
+h5 {
+    font-size: var(--text-size-h5);
+    margin: 22px 0;
+    line-height: var(--line-height-h5);
+}
+
+h6 {
+    font-size: var(--text-size-h6);
+    margin: 18px 0;
+    line-height: var(--line-height-h6);
+}
+
+.toolbar-icon {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 60px;
+    padding: 18px;
+    background-color: transparent;
+    transition: background-color 0.15s;
+}
+
+.toolbar-icon:hover {
+    background-color: var(--theme-color);
+}
