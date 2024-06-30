@@ -56,3 +56,25 @@ main {
 .footer-content a:hover {
     opacity: 1;
 }
+
+.fetch-progress-holder label {
+    font-weight: 700;
+}
+
+.fetch-progress-holder progress {
+    font-weight: 700;
+}
+
+.prog-a::after {
+    content: ".";
+}
+
+.prog-b::after {
+    content: "..";
+}
+
+.prog-c::after {
+
+    content: "...";
+}
+

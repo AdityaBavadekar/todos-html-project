@@ -50,8 +50,6 @@ function initTodos(){
     };
 }
 
-initTodos()
-
 filterDialog = document.getElementById('filter-dialog')
 
 document.getElementById('filter-close').addEventListener('click', _ => {

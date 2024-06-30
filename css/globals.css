@@ -281,3 +281,15 @@ input::-webkit-datetime-edit-year-field:focus {
     outline: none;
     border-radius: 4px;
 }
+
+progress {
+    margin: 18px;
+    align-self: center;
+}
+
+progress:not([value]) {
+    width: 90%;
+    height: 22px;
+    margin: 4px 0;
+    height: 8px;
+}
