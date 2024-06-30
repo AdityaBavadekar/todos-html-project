@@ -27,7 +27,8 @@ html {
     --line-height: 28px;
 
     /* TYPOGRAPHY */
-    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    --font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-family: var(--font-family);
 
     /* Sizes */
     --radius-default: 8px;
@@ -122,6 +123,7 @@ input, button, textarea {
     outline: none;
     color: inherit;
     resize: vertical;
+    resize: none;
 }
 
 ul {
@@ -200,4 +202,82 @@ h6 {
 
 .toolbar-icon:hover {
     background-color: var(--theme-color);
+}
+
+dialog {
+    margin: 60px;
+    padding: 18px;
+    background-color: var(--primary-background-color);
+    border-radius: var(--radius-default);
+    border: 1px solid transparent;
+    align-self: center;
+    color: var(--text-color);
+}
+
+dialog button {
+    padding: 8px;
+    background-color: var(--secondary-background-color);
+    border-radius: var(--radius-default);
+    margin-top: 8px;
+    opacity: 0.8;
+    transition: background-color .25s;
+}
+
+dialog button:hover {
+    background-color: var(--color-link);
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.75;
+}
+  
+::-webkit-datetime-edit {
+    padding:  0 18px;
+    align-items: center;
+    margin: 0;
+}
+::-webkit-datetime-edit-fields-wrapper {
+    background: var(--secondary-background-color);
+    padding: 8px;
+    font-family: var(--font-family);
+    border-radius: var(--radius-default);
+}
+
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field { 
+    opacity: 0.6;
+ }
+
+::-webkit-datetime-edit-month-field, 
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field { 
+    padding: 4px;
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator { 
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator:hover {
+    transform: scale(1.2);
+}
+
+
+input::-webkit-datetime-edit-ampm-field:focus,
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-hour-field:focus,
+input::-webkit-datetime-edit-millisecond-field:focus,
+input::-webkit-datetime-edit-minute-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-second-field:focus,
+input::-webkit-datetime-edit-week-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+    background-color: var(--theme-color);
+    color: wheat;
+    opacity: 1;
+    outline: none;
+    border-radius: 4px;
 }

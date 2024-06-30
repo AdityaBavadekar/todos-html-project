@@ -20,15 +20,16 @@
                 <a href="/">
                     <i class="ri-arrow-left-line toolbar-icon"></i>
                 </a>
-                <code>/Add TODO</code>
+                <code class="title">/Add TODO</code>
             </h1>
 
             <div class="todo-content">
-                <textarea class="todo-title todo-textarea autoResize" name="todo-title" id="" rows="1" placeholder="Title"></textarea>
-                <textarea class="todo-description todo-textarea autoResize" name="todo-description" id="" rows="1" placeholder="Enter description" autofocus></textarea>
+                <textarea class="todo-title todo-textarea autoResize" name="todo-title" id="todo-title" rows="1" placeholder="Title" type="text" spellcheck="false"></textarea>
+                <textarea class="todo-description todo-textarea autoResize" name="todo-description" id="todo-description" rows="1" placeholder="Enter description" type="text" spellcheck="false" autofocus></textarea>
             </div>
         </main>
 
+        <script src="js/add_todo.js"></script>
         <script src="js/auto_resize_textarea.js"></script>
 
     </body>

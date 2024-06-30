@@ -17,9 +17,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     </head>
     <body>
+        <dialog id="filter-dialog">
+            <label for="date-input">Enter date to filter TODOs:</label>
+            <input type="date" name="date-input" id="date-input" autofocus>
+            <br>
+            <button type="button" id="filter-close">Apply</button>
+        </dialog>
         <main>
             <h1>
                 <i class="ri-todo-fill"></i>
@@ -39,7 +46,7 @@
                 </li>
                 <li>
                     <div class="filter">
-                        <button class="add-new-button">
+                        <button class="add-new-button" id="filter-button">
                             <i class="ri-filter-fill"></i>
                             Filter
                         </button>
